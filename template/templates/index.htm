@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="图片,社交,图片分享">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- 添加至主屏幕时不显示工具栏 -->
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<!-- 禁止网页使用拨号功能 -->
+	<meta name="format-detection" content="telephone=no">
+	<title>owinds-分享精彩瞬间</title>
+	<link rel="icon" href="images/icon_144.png" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon_114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon_144.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/upload.css">
+	<link rel="stylesheet" href="css/homepage.css">
+	<link rel="stylesheet" href="css/imgTmp.css">
+</head>
+<body>
+	<div class="viewport" id="viewport">
+		<div id="wrapper">
+			<!-- 主体 -->
+			<div class="container">
+				{include file='../../inc/header1.html'}
+				<!-- 主要内容 -->
+				<div class="main" id="main">
+					<!-- 下拉刷新状态栏 -->
+					<div class="pullDownBar">
+						<div class="refreshIcon" id="pulldownrefresh"></div>
+						<div class="pulldownIcon"></div>
+					</div>
+					<!-- 时间轴式分布内容 -->
+					<div class="timeLineWrapper" id="timeLineWrapper"><img src="images/loading50.gif" class="loading50Index"></div>
+					<!-- 相册式分布内容 -->
+					<div class="photosWrapper" id="albumWrapper" style="display:none"><img src="images/loading50.gif" class="loading50Index"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="child-process" class="child-process" style="display:none"></div>
+	<div id="home-process" class="home-process" style="display:none"></div>
+	<div id="final-process" class="final-process" style="display:none"></div>
+	<div class="formTipInfo" id="formTipInfo"></div>
+	{include file='../../inc/layer.html'}
+	<!-- 用户信息 -->
+	<script>
+	{literal}
+	window.APP = {};
+	window.user = {};
+	{/literal}
+	window.user.uid = '{$uid}';
+	window.user.name = '{$username}';
+	window.user.profile = '{$userhead}';
+	window.user.description = '{$userdesc}';
+	window.user.time = '{$time}';
+	// document.domain="localhost";
+	</script>
+	<script>
+	console.info(user);
+	</script>
+	<script src="js/winds.js"></script>   <!-- 公用方法 -->
+	<script src="js/templates.js"></script>  <!-- 渲染html结构层 -->
+	<script src="js/home_templates.js"></script>  <!-- 渲染html结构层 -->
+	<script src="js/user/user.js"></script>  <!-- 基于user的公共模块方法 -->
+	<script src="js/upload/Icrop.js"></script>  <!-- 裁切操作 -->
+	<script src="js/page/asider.js"></script> <!-- 侧边栏效果 -->
+	<script src="js/upload/uploadController.js"></script>  <!-- 上传控制层 -->
+	<script src="js/source/database.js"></script>  <!-- Web SQL方法层 -->
+	<script src="js/photos/photos.js"></script>  <!-- 图片列表本地数据库操作 -->
+	<script src="js/photos/photocontroller.js"></script>  <!-- 图片列表控制层 -->
+	<script src="js/homepage/homeController.js"></script>
+	<script src="js/plugin/pull-down-refresh.js"></script> <!-- 下拉刷新组件 -->
+	<script src="js/route/light.router.js"></script>  <!-- 路由逻辑层 -->
+	<script src="js/final/finalController.js"></script>
+	<script src="js/applicationController.js"></script>  <!-- 应用控制层 -->
+	<script>
+	{literal}
+	//应用启动
+	document.addEventListener('DOMContentLoaded', function(){
+		APP.applicationController.start();
+	});
+	{/literal}
+	</script>
+</body>
+</html>

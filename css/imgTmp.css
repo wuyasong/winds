@@ -1,0 +1,43 @@
+@charset 'utf-8';
+/* image模版样式 */
+.imgArea{ width: 100%; overflow: hidden;}
+.imgArea img{ max-width: 100%; display: block;}
+.imgModal-fnbar{ height: 50px; box-sizing:border-box; padding: 10px 0; }
+.fnbar-left{ width: 40px; box-sizing:border-box; float: left; border-radius: 4px; padding: 3px 0;}
+.fnbar-left i{ display: block; width: 28px; height: 26px; background-position: 0 -345px; background-size: 25px; margin: 0 auto;}
+.fnbarItem{ float: right; display: inline-block; height: 23px; display: -webkit-box; display: box; padding: 3px 10px; border-right: 1px solid #e6e6e6; border-radius: 4px;}
+.fnbar-left:active,.fnbarItem:active,.fnbar-left.active,.fnbarItem.active{ background: #f6f6f6;}
+.fnbar-iconbox i{display: block;}
+.commentIcon_final i{width: 22px;height: 22px;background-position: 0 -239px;background-size: 22px auto;}
+.likeIcon_final i{width: 16px;height: 19px;background-position: 0 -273px;background-size: 22px auto;}
+.iconbox-num{ color: #aaa; line-height: 24px; margin-left: 6px; font-size: 15px;}
+/* imgModal-personInfo */
+.imgModal-personInfo{ padding: 8px 14px; display: -webkit-box; display: box; box-shadow: 0 2px 4px rgba(0,0,0,0.2); position: relative;}
+.personInfo-head{}
+.personInfo-head img{ width: 50px; height: 50px; border-radius: 50%;}
+.personInfo-content{ -webkit-box-flex: 2; padding: 0 16px; position: relative;}
+.personInfo-name{ color: #777; font-size: 16px; margin-top: 10px; width: 110px; text-overflow: ellipsis; white-space: nowrap;}
+.personInfo-desc{ color: #555; font-size: 14px; margin-top: 8px; line-height: 20px;}
+.personInfo-time{ color: #999; font-size: 13px; position: absolute; right: 16px; top: 10px;}
+.personInfo-btn{ width: 35px; height: 35px; margin-top: 10px; background: #fb3a55; border-radius: 50%;}
+.personInfo-btn:active,.personInfo-btn.active{ background: #e12e31;}
+.commentIconBtn{ display: block; width: 20px; height: 21px; background-size: 21px auto; background-position: 0 -495px; margin-top: 7px; margin-left: 7px;}
+/* message modal */
+.msgModal{ background: #eee; padding: 24px 10px 20px;}
+.msgModal-title{ height: 20px; line-height: 20px; font-size: 16px; padding-left: 10px; position: relative;}
+.msgModal-title:after{ content: ''; font-size: 0; position: absolute; top: 0px; left: 0; width: 4px; height: 20px; background: #e12e31; border-radius: 4px; display: block;}
+.msgModal-box{}
+.messageList{}
+.messageItem{ display: -webkit-box; display: box; border-radius: 5px; background: #fff; margin-top: 15px; padding: 5px 10px;}
+.messageItem .personInfo-name{ font-size: 15px;}
+.messageItem .personInfo-desc{ font-size: 13px;}
+/* praise modal */
+.praiseList{ font-size: 0;}
+.praiseItem{ display: inline-block; width: 16.6666%; margin-top: 10px;}
+.praiseItem:nth-of-type(6n){ margin-right: 0;}
+.praiseItem img{ width: 41px; height: 41px; border-radius: 50%; display: block; margin: 0 auto;}
+.praiseNumber{ margin-top: 14px; padding-top: 10px; font-size: 16px; color: #929292; text-align: center; border-top: 1px solid #dcdcdc;}
+@media screen and (max-width: 320px){
+}
+@media screen and(min-width: 320px) and (max-width: 360px){
+}

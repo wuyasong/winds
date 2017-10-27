@@ -1,0 +1,8 @@
+/* feedback topbar style */
+.topbar-send{ z-index: 10; position: absolute; right: 6px; top: 10px; width: 52px; height: 32px; line-height: 32px; background: #a11e21; color: #fff; font-size: 14px; text-align: center;}
+/* feedback content style */
+.feed-title{ height: 48px; line-height: 48px; font-size: 14px; color: #444; padding: 0 10px; border-bottom: 1px solid #ccc;}
+.feed-content{ padding: 8px 10px 0;}
+.feed-txt{ background: #efefef; padding: 10px 12px; font-size: 15px; width: 100%; border: none; box-sizing: border-box; height: 160px;}
+.feed-txt:-webkit-input-placeholder{ color: #6a6a6a;}
+.feed-contact{ padding: 0 12px; text-align: right; color: #6a6a6a; font-size: 14px; margin-top: 14px;}

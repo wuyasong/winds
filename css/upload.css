@@ -1,0 +1,27 @@
+/* cut page */
+.containerfullScreen{ width: 100%; height: 100%;}
+.fullScreen{ width: 100%; height: 100%; box-sizing: border-box; background: #000;}
+.up-box{ width: 100%; height: 100%;}
+.cut-frame{ position: relative; height: 100%; display: -webkit-box; -webkit-box-align: center; /* 父容器里的子容器垂直对齐方式 */ -webkit-box-pack: center; /* 父容器里的子容器水平对齐方式 */ overflow: hidden;}
+.cut-img{ max-height: 100%;max-width: 100%; display: block;}
+.cut-lay{ position: absolute;}
+.cut-masklayer{ top: 0;left: 0;right: 0;bottom: 0; background: rgba(0,0,0,0.4);}
+.cut-selectWrap{ width: 170px; height: 170px; top: 50%; left: 50%; margin-left: -85px; margin-top: -85px; display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center; border: 3px solid #fff;box-sizing: border-box;}
+.cut-select{ box-sizing: border-box; width: 100%; height: 100%; background: transparent; overflow: hidden;}
+.cut-dotWrap{ display: block; position: absolute; width: 17px; height: 17px; padding: 10px;}
+.cut-fr-dotWrap{ top: -20px; left: -20px;}
+.cut-sec-dotWrap{ top: -20px; right: -20px;}
+.cut-thr-dotWrap{ bottom: -20px; left: -20px;}
+.cut-fou-dotWrap{ bottom: -20px; right: -20px;}
+.cut-dotWrap i{ display: block; width: 100%; height: 100%; background: #fff; border-radius: 50%;}
+/* edit page */
+.edit-preImg{ overflow: hidden;overflow:visible;-webkit-transform: translateZ(0);}
+.edit-preImg img{ max-width: 100%; display: block;}
+.edit-fill{ padding: 20px 10px;}
+.edit-fillLine{ position: relative; border-bottom: 1px solid #bdbdbd;}
+.edit-fillLine-last{ margin-top: 40px;}
+.edit-fillLine:before,.edit-fillLine:after{ content: ''; display: block; font-size: 0; position: absolute; bottom: 0px; width: 1px; height: 10px; font-size: 0; background: #bdbdbd;}
+.edit-fillLine:before{ left: 0;}
+.edit-fillLine:after{ right: 0;}
+.edit-fillTxt{ box-sizing: border-box; border: none; width: 100%; font-size: 16px; padding: 14px 12px;}
+.edit-fillTxt:-webkit-input-placeholder{ color: #bdbdbd;}

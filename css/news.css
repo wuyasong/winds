@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* topbar style */
+.topbar-tab{ width: 174px; height: 38px; position: absolute; left: 50%; top: 6px; margin-left: -87px; display: -webkit-box; display: box;}
+.topbar-tab-con{ width: 50%; line-height: 38px; color: #ffc7c8; background: #b9181b; text-align: center; font-size: 14px;}
+.topbar-tab-con.current{ background: #e75759; color: #fff;}
+.topbar-tab-l{ border-top-left-radius: 38px; border-bottom-left-radius: 38px;}
+.topbar-tab-r{ border-top-right-radius: 38px; border-bottom-right-radius: 38px;}
+/* 主要内容 */
+
+body{ background: #f8eeee;}
+.newsTimeLine{ padding-top: 20px; position: relative;}
+.newsTimeLine:after{ content: ''; position: absolute; width: 4px; height: 100%; left: 30px; top: 0; background: #e8dddd; z-index: -1;}
+.defaultNews{ font-size: 26px; color: #666; text-align: center;}
+.newsTimeLineItem{ padding: 10px 24px; display: -webkit-box; display: box; border-top: 1px solid #fff; border-bottom: 1px solid #e1d1d1;}
+.newsTimeLineItem:first-child{ border-top: none;}
+.newsTimeLineItem:last-child{ border-bottom: none;}
+.dynamic-dot{ width: 10px; height: 10px; background: #cbbcbc; border: 3px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.3); border-radius: 50%;}
+.dynamic-content{ margin-left: 10px; -webkit-box-flex: 1;}
+.dynamic-content img{ width: 82px;}
+.dynamic-time{ color: #888; font-size: 14px; padding-bottom: 6px; height: 20px; line-height: 20px;}
+.dynamic-txt{ color: #666; font-size: 16px; line-height: 24px; word-break: break-word; position: relative;}
+
+/* opus */
+.opus-name{ display: inline-block; color: #b9181b;}
+.opus-head{ display: inline-block; margin-left: -39px; float: left;}
+.opus-head img{ border-radius: 50%; width: 42px; height: 42px; display: block;}
+.opus-txt{ line-height: 42px; margin-left: 10px; font-size: 15px;}
+.opus-doit{ margin-left: 4px;}
+.opus-cmtTxt,.dynamic-img{ padding-left: 10px;}
+.opus-cmtTxt{ color: #999; margin-bottom: 10px; font-size: 15px;}
+.dynamic-img img{ width: 80px; height: 80px;}

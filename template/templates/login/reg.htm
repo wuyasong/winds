@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- 添加至主屏幕时不显示工具栏 -->
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<!-- 禁止网页使用拨号功能 -->
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="icon" href="" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/sign.css">
+</head>
+<body>
+	<!-- 主体 -->
+	<div class="container">
+
+		<!-- 顶部状态栏 -->
+		<header class="login-topbar">
+			<a class="login-topbar-left" href="../index.php"><i class="backbtn"></i></a>
+			<div class="login-topbar-center">注册账号</div>
+		</header>
+
+		<!-- 主要内容 -->
+		<div class="main">
+			<div class="logobox box-reg"><img src="../images/logo_l1.png"></div>
+			<div class="login-infobox infobox-reg">
+				<div class="loginLine">
+					<i class="login-icon login-mailIcon"></i>
+					<!-- form 属性的值必须是其所属表单的 id -->
+					<input type="email" name="email" class="login-input" placeholder="请输入电子邮箱（登录账号）" form="regForm">
+				</div>
+				<div class="loginLine">
+					<i class="login-icon login-usrIcon"></i>
+					<input type="text" name="username" class="login-input" placeholder="请输入用户名（昵称）" form="regForm">
+				</div>
+				<div class="loginLine">
+					<i class="login-icon login-pwdIcon"></i>
+					<input type="text" name="password" class="login-input" placeholder="请输入密码" form="regForm">
+				</div>
+				<div class="loginLine">
+					<i class="login-icon login-descIcon"></i>
+					<input type="text" name="description" class="login-input" placeholder="请输入个人简介" form="regForm">
+				</div>
+				<div class="loginLine">
+					<p class="selectHead">添加头像</p>
+					<input type="file" name="head" id="head" class="selectFile login-input" value="" form="regForm">
+				</div>
+			</div>
+			<div class="signInBtn signInBtn-reg"><button id="regBtn">注册</button></div>
+		</div>
+		<div class="loginTipInfo" id="loginTipInfo"></div>
+		<form action="regsubmit.php" method="post" id="regForm" name="regForm" enctype="multipart/form-data"></form>
+	</div>
+	<script>window.user = {};</script>
+	<script src="../js/user/user.js"></script>
+	<script src="../js/user/reg.js"></script>
+</body>
+</html>

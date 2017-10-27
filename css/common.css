@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* sprite */
+.topbar-fn, .topbar-selecticon, .topbar-back, .topbar-forward, .fnbox-iconbox i, .timeLineItem-iconbox i, .refreshIcon, .pulldownIcon, .bottombar-btnbox i, .personState, .fnbar-left i, .fnbar-iconbox i, .commentIconBtn, .pulltodown, .pulltoup, .pulltorefresh{ background: url(../images/sprite.png) no-repeat;}
+.logo, .asideLogo{ background: url(../images/logo.png) no-repeat;}
+.container{/* padding-left: 68.75%; */ width: 100%;}
+.wb-box{ display: -webkit-box; display: -moz-box; display: box;width: 100%;height: 100%;}
+/* topbar */
+.topbar{ width: 100%; height: 50px; background: #e12e31; position: fixed; top: 0; left: 0; z-index: 100;}
+.topbar-left{ display: block; width: 44px; height: 100%; padding-top: 16px; box-sizing: border-box;}
+.topbar-left:active,.frowardBtn:active,.topbar-select:active{ background: #d52c2f;}
+.topbar-fn{ width: 20px; height: 20px; background-position: 0 0; background-size: 28px auto; margin-left: 12px;}
+.topbar-back{ width: 12px; height: 18px; background-position: 0 -526px; background-size: 25px auto; margin-left: 12px;}
+.topbar-right{ position: absolute; right: 0; top: 0; width: 42px; height: 100%; z-index: 10;}
+.frowardBtn{ width: 46px;}
+.topbar-select{ height: 100%; box-sizing: border-box; padding-top: 15px; padding-left: 10px;}
+.topbar-selecticon{ width: 20px; height: 20px; background-position: 0 -35px; background-size: 28px auto;}
+.topbar-droplist{ display: block; width: 80px;/* height: 81px;*/ background: #e12e31; position: absolute; top: 50px; right: 0; box-shadow: -1px 1px 4px rgba(0,0,0,0.2);opacity: 0; -webkit-transform: scale(0.2); -webkit-transition: -webkit-transform 0.3s ease-out; transition: transform 0.3s ease-out;}
+.dropShow{opacity: 1; -webkit-transform: scale(1);}
+.topbar-forward{ width: 12px; height: 18px; background-position: 0 -526px; background-size: 25px auto; margin-left: 18px; -webkit-transform: rotate(180deg); margin-top: 16px;}
+.topbar-droplist li{ width: 100%; height: 40px; line-height: 40px; text-align: center; font-size: 13px; color: #fff; box-sizing: border-box;}
+.topbar-droplist li:active, .topbar-droplist li.current{ background: #e24649;}
+.logo{ position: absolute; width: 41px; height: 36px; left: 50%; top: 6px; margin-left: -22px; background-size: 41px auto;}
+.logo a{ display: block; height: 100%;}
+/* fnTipLayer */
+.fnTipLayer{ position: fixed; background: #fff; width: 140px; height: 30px; top: 50%; left: 50%; margin-top: -15px; margin-left: -70px; z-index: 102; border-radius: 5px;}
+.fnTipLayer p{ line-height: 30px; text-align: center; font-size: 17px; color: #777;}
+.fnTipLayer:active{ background: #efefef;}
+/* asidebar */
+.asidebar{ position: fixed; left: 0; /* left: -68.75%; */ top: 0; width: 68.75%; /* 440 / 640 */ height: 100%; background: url(../images/asiderBg.jpg) #9F4E9D no-repeat; border: none; z-index: 110; -webkit-transform: translate3d(-100%,0,0); box-shadow: none; -webkit-transition: -webkit-transform 300ms linear;}
+.asidebar.show{ -webkit-transform: translate3d(0,0,0); /* left: 0; */ box-shadow: 4px 0 10px rgba(0,0,0,0.3);}
+.upfile{ font-size: 100px; position: absolute; opacity: 0; z-index: 100;}
+/* already login state */
+.asidebar-content{ padding: 20px 30px 0;}
+.asidebar-userHead{ clear: both; overflow: hidden; position: relative;}
+.editHead{ opacity: 0; font-size: 138px; position: absolute; left: 0; top: 0;}
+.userhead{ width: 60px; height: 60px; background: url(../images/headImg1.jpg) no-repeat; background-size: 60px auto; border-radius: 50%; float: left;}
+.username{ display: block; font-size: 16px; margin-left: 70px; color: #fff; font-weight: bold; line-height: 60px; white-space: nowrap; text-overflow: ellipsis; width: 94px;}
+.asidebar-userDescri{ margin-top: 20px; color: #fff; font-size: 16px; line-height: 22px;}
+.asidebar-fnbox{ position: absolute; width: 178px; height: 178px; border-radius: 50%; overflow: hidden; top: 160px; left: 50%; margin-left: -89px; display: inline-block;}
+.fnbox-round-small{ position: absolute; width: 52px; height: 52px; background: #f4f4f4; border-radius: 50%; top: 50%; left: 50%; margin-left: -26px; margin-top: -26px; box-shadow: 0 0 4px rgba(0,0,0,0.2);}
+.fnbox-back{ width: 20px; height: 20px; border: 2px solid #666; border-radius: 4px; margin-left: 14px; margin-top: 14px; }
+.fnbox-wrap{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; -webkit-transform: rotate(-45deg);}
+.fnbox-iconbox{ display: block; width: 50%; height: 50%; float: left; overflow: hidden; box-sizing: border-box; position: relative;}
+.fnbox-iconbox .boxline{ position: absolute; width: 46px; height: 46px;}
+.fnbox-iconbox i{ display: block; position: absolute; -webkit-transform: rotate(45deg);}
+.exiticon .boxline{ right: 0; top: 0; border-right: 1px solid #dadadd;}
+.upicon .boxline{bottom: 0; right: 0; border-bottom: 1px solid #dadadd;}
+.tipicon .boxline{ top: 0; left: 0; border-top: 1px solid #dadadd;}
+.editicon .boxline{bottom: 0; left: 0; border-left: 1px solid #dadadd;}
+.exiticon i{ width: 30px; height: 29px; background-position: 0 -787px; left: 24px; top: 32px;}
+.upicon i{ width: 30px; height: 24px; background-position: 0 -752px; left: 32px; top: 30px;}
+.tipicon i{ width: 24px; height: 32px; background-position: 0 -859px; left: 32px; top: 30px;}
+.editicon i{ width: 30px; height: 30px; background-position: 0 -821px; left: 32px; top: 30px;}
+.radiusbox{ position: absolute; width: 86px; height: 86px; border-radius: 50%;  border: 46px solid #f5f5f5;}
+.radius1{ left: 0; top: 0;}
+.radius2{ right: 0; top: 0;}
+.radius3{ left: 0; bottom: 0;}
+.radius4{ right: 0; bottom: 0;}
+.notice{ position: absolute; width: 16px; height: 16px; text-align: center; line-height: 16px; color: #fff; font-size: 8px; background: #eb1b1b; border-radius: 50%; display: block; z-index: 30; left: 94px; bottom: 30px;}
+.fnbox-iconbox:active .radiusbox{ border-color: #e12e31;}
+.fnbox-round-small:active{ background: #fff;}
+/* not login state */
+.unloginState{ padding: 40px 20px 0;}
+.asideLogo{ width: 82px; height: 72px; background-size: 82px auto; margin: 0 auto;}
+.asideLoginBtn{ display: block; height: 40px; line-height: 40px; text-align: center; border-radius: 40px; margin-top: 30px; background: #e9e9e9; color: #666; font-size: 18px;}
+/* 主要内容 */
+.main{ padding-top: 50px;}
+/* pull down bar */
+.pullDownBar, .pullUpBar{ width: 100%; height: 50px; line-height: 50px; text-align: center;position: relative;}
+.pullDownBar{ height: 0; overflow: hidden; background: #2a2a2a; z-index: 99;}
+.pullUpBar{ left: 0; bottom: 0px; background: #fff; z-index: 99; display: none;}
+.refreshIcon{ display: inline-block; vertical-align: middle; width: 25px; height: 25px; background-position: 0 -761px; background-size: 42px auto; position: absolute;top: 50%; left: 50%; margin-left: -12px; margin-top: -12px; -webkit-animation: pullrefrsh 1s linear infinite;}
+.pulldownIcon{ display: inline-block;  vertical-align: middle; width: 16px; height: 30px; background-position: 0 -738px; background-size: 37px auto; position: absolute;bottom: 13px; left: 50%; margin-left: -7px;}
+.pulldownIcon.up{ -webkit-transform: rotate(180deg);}
+.pullUpBar .refreshIcon{ background-position: 0 -797px;}
+.loadinggif{ -webkit-animation: loadinggif 1s linear infinite; animation: loadinggif 1s linear infinite;}
+.loading50Index{ position: absolute; left: 50%; top: 50%; margin-left: -25px; margin-top: -25px;}
+/* mask layer */
+.maskLayer{ width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 102; background: rgba(0,0,0,0.6);}
+/* tip layer */
+.tipLayer{ position: absolute; top: 50%; left: 50%; margin-left: -140px; background: #fff; width: 280px; border-radius: 10px; z-index: 103; overflow: hidden;}
+.tipLayer-title{ height: 44px; line-height: 44px; border-bottom: 1px solid #e12e31; padding-left: 20px; font-size: 18px; font-weight: bold;}
+.tipLayer-content{ font-size: 16px; line-height: 24px; padding: 15px;}
+.tipLayer-btnbox{ font-size: 0; border-top: 1px solid #ededed;}
+.confirmbtn{ font-size: 16px; color: #e12e31; display: inline-block; width: 50%; height: 44px; line-height: 44px; text-align: center;}
+.confirm-y{ border-right: 1px solid #ededed; box-sizing: border-box;}
+.confirmbtn:active{ background: #eee;}
+/* bottom bar */
+.bottombar{ width: 100%; height: 60px; font-size: 0; position: fixed; bottom: 0; left: 0; background: #f7f7f7; box-shadow: 0 -2px 5px rgba(0,0,0,0.2); z-index: 100;}
+.bottombar-btnbox{ display: inline-block; height: 60px; line-height: 60px; width: 33.333333%; height: 80px; text-align: center;}
+.bottombar-btnbox:active{ background: #ddd;}
+.bottombar-btnbox i{ display: inline-block; vertical-align: middle; text-align: center; background-size: 25px auto;}
+.bottombar-homeIcon i{ width: 25px; height: 23px; background-position: 0 -164px;}
+.bottombar-photoIcon i{ width: 24px; height: 20px; background-position: 0 -204px;}
+.bottombar-likeIcon i{ width: 19px; height: 22px; background-position: 0 -239px;}
+/* upload progress */
+.updTask{ display: -webkit-box; display: box; padding: 6px 10px; border-bottom: 1px solid #ccc;}
+.updTask-img img{ width: 40px; height: 40px; display: block;}
+.updTask-state{ text-align: center; line-height: 40px; font-size: 16px; font-weight: bold; color: #444; -webkit-box-flex: 1; box-flex: 1;}
+.updTask-btn{ width: 44px; box-sizing: border-box; border-left: 1px solid #ccc; padding-left: 15px;}
+.updTask-btn i{ background: url(../images/s_sprite.png) no-repeat; display: block; width: 23px; height: 28px; background-position: 0 -119px; background-size: 23px auto; margin-top: 6px;}
+.updTask-progressBar{ -webkit-box-flex: 1; box-flex: 1; height: 8px; margin: 15px 0; border-radius: 8px; overflow: hidden; background: url(../images/progressRepeatBg.png);background-position: 0 0; background-size: auto 100%;  -webkit-animation: progressbar 4s linear infinite; animation: progressbar 4s linear infinite;}
+/* share to sns layer */
+.shareToLayerWrapper{ width: 100%; padding: 0 3.125%; box-sizing: border-box; position: fixed; bottom: 66px; left: 0; z-index: 110;}
+.shareToLayer{ display: -webkit-box; display: box; padding: 15px 20px; background: #fff; border-radius: 5px;}
+.shareToItem{ -webkit-box-flex: 1; box-flex: 1;}
+.SNSIcon{ width: 40px; height: 40px; background: url(../images/shareto_sprite.png) no-repeat; margin: 0 auto; background-size: 40px auto;}
+.weixinIcon{ background-position: 0 -0px;}
+.weiboIcon{ background-position: 0 -52px;}
+.qzoneIcon{ background-position: 0 -104px;}
+.SNSName{ margin-top: 10px; font-size: 16px; color: #8d8d8d; text-align: center;}
+.child-process{ width: 100%; height: 100%; position: absolute; left: 0; top: 0;overflow: hidden;}
+.home-process{ width: 100%; position: absolute; left: 0; top: 0;overflow: hidden;}
+.final-process{ width: 100%; position: absolute; left: 0; top: 0;overflow: hidden;}
+/* formTipInfo */
+.formTipInfo{ position: fixed; width: 100%; height: 36px; line-height: 36px; background: #3a3a3a; color: #fff; text-align: center; font-size: 15px; top: 0; left: 0; -webkit-transition: -webkit-transform .3s ease-out; -webkit-transform: translate3d(0,-36px,0);z-index: 200;}
+.formTipInfo.open{ -webkit-transform: translate3d(0,0,0);}
+/*loading layer*/
+#loading-layer{ width: 100px; height: 80px; border-radius: 8px; position: absolute; left: 50%; top: 70%; margin-left: -50px; margin-top: -40px; z-index: 120; display: -webkit-box; -webkit-box-pack: center; -webkit-box-align: center; display: box; box-pack: center; box-align: center; -webkit-animation: loadingshow 1s linear;}
+#loading-layer.complete{ -webkit-animation: loadinghide 1s linear;}
+#loading-layer .refreshIcon{ -webkit-animation: loadinggif 1s linear infinite; animation: loadinggif 1s linear infinite;}
+/* 评论弹窗 */
+.cmtArea{ padding: 14px 10px; height: 25px; position: fixed; left: 0; top: 0; right: 0; z-index: 102; display: -webkit-box; background: #fff;}
+.inputLine{ -webkit-box-flex: 1; margin-right: 15px; margin-top: 16px; height: 7px; position: relative; border: 1px solid; border-color: transparent #3f79fd #3f79fd;}
+.inputLine input{ position: absolute; left: 0; bottom: 0; width: 100%; height: 25px; padding: 4px 6px; box-sizing: border-box; border: none;}
+.cmtSend{ width: 44px; height: 25px; border-radius: 3px; background: #3f79fd; color: #fff; text-align: center; line-height: 25px; font-size: 13px;}
+.cmtSend:active,.cmtSend.active{ background: #5aa3fd;}
+
+@-webkit-keyframes loadingshow{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes loadinghide{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes loadinggif{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(359deg);
+	}
+}
+@-webkit-keyframes pullrefrsh{
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(359deg);
+	}
+}
+@-webkit-keyframes progressbar{
+	0%{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: 100% 0;
+	}
+}
+/*查看方式下拉框显示*/
+@-webkit-keyframes opShow{
+	0%{
+		opacity: 0;
+		-webkit-transform: scale(0.6);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: scale(1);
+	}
+}

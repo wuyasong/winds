@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- 添加至主屏幕时不显示工具栏 -->
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<!-- 禁止网页使用拨号功能 -->
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="icon" href="" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/sign.css">
+</head>
+<body>
+	<!-- 主体 -->
+	<div class="container">
+
+		<!-- 顶部状态栏 -->
+		<header class="login-topbar">
+			<a class="login-topbar-left" href="../index.php"><i class="backbtn"></i></a>
+			<div class="login-topbar-center">用户登录</div>
+		</header>
+
+		<!-- 主要内容 -->
+		<div class="main">
+			<div class="logobox"><img src="../images/logo_l1.png"></div>
+			<div class="login-infobox">
+				<div class="loginLine err">
+					<i class="login-icon login-usrIcon"></i>
+					<input type="email" name="email" id="email" class="login-username login-input" placeholder="请输入账号名（邮箱）" form="logForm">
+				</div>
+				<div class="loginLine err">
+					<i class="login-icon login-pwdIcon"></i>
+					<input type="text" name="password" id="password" class="login-password login-input" placeholder="请输入密码" form="logForm">
+				</div>
+			</div>
+			<div class="signInBtn"><button id="logBtn">登录</button></div>
+		</div>
+		<div class="loginTipInfo" id="loginTipInfo"></div>
+	</div>
+	<script>
+	{literal}
+	window.user = {};
+	{/literal}
+	</script>
+	<script src="../js/user/user.js"></script>
+	<script src="../js/user/login.js"></script>
+</body>
+</html>
